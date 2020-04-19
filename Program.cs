@@ -22,6 +22,69 @@ namespace HomeWork14
                        System.Console.WriteLine("4.Minus(-):");
                        System.Console.WriteLine("5.Exit:");
                        Console.ForegroundColor = ConsoleColor.White;
+
+                       string choice = Console.ReadLine();
+                        switch(choice){
+         
+                            case "1": {
+                                System.Console.Write("Enter your first number: ");
+                            double x = Convert.ToDouble(Console.ReadLine());
+                             System.Console.Write("Enter your second number: ");
+                            double y = Convert.ToDouble(Console.ReadLine());
+                            Operation<double> sum = Sum<double>;
+                            double result = sum.Invoke(x, y);
+                            Console.ForegroundColor = ConsoleColor.Green;
+                             System.Console.WriteLine("======================");
+                            System.Console.WriteLine($"Result is: {result}");
+                             System.Console.WriteLine("======================");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            };break;
+                            
+                            case "2":{
+                            System.Console.Write("Enter your first number:");
+                            double x = Convert.ToDouble(Console.ReadLine());
+                             System.Console.Write("Enter your second number:");
+                            double y = Convert.ToDouble(Console.ReadLine());
+                             Operation<double> div = Divide<double>;
+                             if(x > y){
+                             double result = div.Invoke(x, y);
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            System.Console.WriteLine("======================");
+                            System.Console.WriteLine($"Result is:{result}");
+                            System.Console.WriteLine("======================");
+                            Console.ForegroundColor = ConsoleColor.White;
+                             }
+                         
+                            };
+                             break;
+
+                            case "3":{
+                            System.Console.Write("Enter your first number: ");
+                            double x = Convert.ToDouble(Console.ReadLine());
+                             System.Console.Write("Enter your second number: ");
+                            double y = Convert.ToDouble(Console.ReadLine());
+                             Operation<double> mult = Multiply<double>;
+                            double result = mult.Invoke(x, y);
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            System.Console.WriteLine("======================");
+                            System.Console.WriteLine($"Result is:{result}");
+                            System.Console.WriteLine("======================");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            };
+                             break;
+
+                             
+
+                             case "5":  sss = false; break;
+
+                             default: Console.ForegroundColor = ConsoleColor.Red;
+                              System.Console.WriteLine("======================");
+                              Console.WriteLine("You are writed wrong number!!!");
+                              System.Console.WriteLine("======================");
+                              Console.ForegroundColor = ConsoleColor.White;
+                              break;
+                        }
+
                       
                 }   
             
