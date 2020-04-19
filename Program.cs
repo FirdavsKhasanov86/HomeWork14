@@ -17,6 +17,11 @@ namespace HomeWork14
                        Console.ForegroundColor = ConsoleColor.Yellow;
                        System.Console.WriteLine("Choose your operations(*,/,+,-):");
                        System.Console.WriteLine("1.Multiply(*):");
+                       System.Console.WriteLine("2.Divide(/):");
+                       System.Console.WriteLine("3.Add(+):");
+                       System.Console.WriteLine("4.Minus(-):");
+                       System.Console.WriteLine("5.Exit:");
+                       Console.ForegroundColor = ConsoleColor.White;
                       
                 }   
             
